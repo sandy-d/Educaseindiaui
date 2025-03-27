@@ -1,26 +1,344 @@
-@import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
+/* body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+.greeting {
+  /* Layout Properties */
+  width: 375px;
+  height: 812px;
+  background: #F7F8F9;
+  opacity: 1;
+
+  /* Centering */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Positioning */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.welcome {
+  /* Layout Properties */
+  position: absolute;
+top: 549px;
+left: 20px;
+width: 231px;
+height: 33px;
+/* UI Properties */
+text-align: left;
+font: normal normal medium 28px/17px Rubik;
+letter-spacing: 0px;
+color: #1D2226;
+opacity: 1;
+font-size: 28px;
+font-family: 'Rubik', sans-serif;
+}
+
+.Lorem_first {
+  /* Layout Properties */
+  position: absolute;
+top: 592px;
+left: 20px;
+width: 232px;
+height: 48px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 18px/26px Rubik;
+letter-spacing: 0px;
+color: #1D2226;
+opacity: 0.6;
+}
+
+.custom-button-create-Account {
+  /* Layout Properties */
+  position: absolute;
+top: 669px;
+left: 20px;
+width: 335px;
+height: 46px;
+/* UI Properties */
+background: #6C25FF 0% 0% no-repeat padding-box;
+border-radius: 6px;
+opacity: 1;
+
+text-align: center;
+font: normal normal medium 16px/17px Rubik;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+font-size: 16px;
+border-radius: 6px;
+border-color: aliceblue;
+}
+
+.custom-button-already {
+  /* Layout Properties */
+  position: absolute;
+top: 725px;
+left: 20px;
+width: 335px;
+height: 46px;
+/* UI Properties */
+background: #6C25FF4B 0% 0% no-repeat padding-box;
+opacity: 1;
+font-size: 16px;
+border-radius: 6px;
+border-color: aliceblue;
+}
+.Signin {
+  /* Layout Properties */
+  position: absolute;
+top: 40px;
+left: 20px;
+width: 188px;
+height: 69px;
+/* UI Properties */
+font-size: 28px;
+text-align: left;
+font: normal normal medium 28px/36px Rubik;
+letter-spacing: 0px;
+color: #1D2226;
+opacity: 1;
+}
+
+.Lorem-login {
+  /* Layout Properties */
+  position: absolute;
+top: 123px;
+left: 20px;
+width: 232px;
+height: 48px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 18px/26px Rubik;
+letter-spacing: 0px;
+color: #1D2226;
+opacity: 0.6;
+}
+
+.input-email-set {
+  /* Layout Properties */
+  position: absolute;
+top: 204px;
+left: 20px;
+width: 335px;
+height: 40px;
+/* UI Properties */
+border: 1px solid #CBCBCB;
+border-radius: 6px;
+opacity: 1;
+}
+.input-password-set {
+  /* Layout Properties */
+  position: absolute;
+top: 267px;
+left: 20px;
+width: 335px;
+height: 40px;
+/* UI Properties */
+border: 1px solid #CBCBCB;
+border-radius: 6px;
+opacity: 1;
+}
+.login-button-set {
+  /* Layout Properties */
+  position: absolute;
+top: 321px;
+left: 20px;
+width: 341px;
+height: 46px;
+/* UI Properties */
+background: #CBCBCB 0% 0% no-repeat padding-box;
+border-radius: 6px;
+border-color: aliceblue;
+opacity: 1;
+color: #FFFFFF;
+}
+
+.create-account-wer{
+  /* Layout Properties */
+  position: absolute;
+top: 40px;
+left: 20px;
+width: 188px;
+height: 69px;
+/* UI Properties */
+text-align: left;
+font: normal normal medium 28px/36px Rubik;
+letter-spacing: 0px;
+font-size: 28px;
+color: #1D2226;
+opacity: 1;
+}
+
+.full-name-set {
+  /* Layout Properties */
+  position: absolute;
+top: 140px;
+left: 20px;
+width: 335px;
+height: 40px;
+/* UI Properties */
+border: 1px solid #CBCBCB;
+border-radius: 6px;
+opacity: 1;
+}
+
+.phone-number-wer {
+  /* Layout Properties */
+  position: absolute;
+top: 209px;
+left: 20px;
+width: 335px;
+height: 40px;
+/* UI Properties */
+border: 1px solid #CBCBCB;
+border-radius: 6px;
+opacity: 1;
+}
+.email-wer {
+  /* Layout Properties */
+  position: absolute;
+top: 278px;
+left: 20px;
+width: 335px;
+height: 40px;
+/* UI Properties */
+border: 1px solid #CBCBCB;
+border-radius: 6px;
+opacity: 1;
+}
+
+.password-wer {
+  /* Layout Properties */
+  position: absolute;
+top: 347px;
+left: 20px;
+width: 335px;
+height: 40px;
+/* UI Properties */
+border: 1px solid #CBCBCB;
+border-radius: 6px;
+opacity: 1;
+}
+.companyname-wer {
+  /* Layout Properties */
+  position: absolute;
+top: 416px;
+left: 20px;
+width: 335px;
+height: 40px;
+/* UI Properties */
+border: 1px solid #CBCBCB;
+border-radius: 6px;
+opacity: 1;
+}
+.radio-group-wer {
+  /* Layout Properties */
+position: absolute;
+top: 474px;
+left: 20px;
+width: 125px;
+height: 15px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 13px/17px Rubik;
+letter-spacing: 0px;
+opacity: 1;
+font-size: 13px;
+}
+.create-account-werr {
+  /* Layout Properties */
+  position: absolute;
+top: 736px;
+left: 20px;
+width: 335px;
+height: 46px;
+/* UI Properties */
+background: #6C25FF 0% 0% no-repeat padding-box;
+border-radius: 6px;
+opacity: 1;
+color: #FFFFFF;
+font-size: 16px;
+border-radius: 6px;
+border-color: aliceblue;
+}
+
+.account-settings-wer {
+  position: absolute;
+  top: 0px;
+left: 0px;
+width: 375px;
+height: 68px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000007;
+opacity: 1;
+}
+
+.account-inside-text {
+  /* Layout Properties */
+  position: unset;
+top: 27px;
+left: 15px;
+width: 146px;
+height: 22px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 18px/21px Rubik;
+letter-spacing: 0px;
+color: #1D2226;
+text-transform: capitalize;
+opacity: 1;
+}
+
+.lourem-test-wer {
+  /* Layout Properties */
+  position: absolute;
+top: 204px;
+left: 20px;
+width: 337px;
+height: 63px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 14px/22px Rubik;
+letter-spacing: 0px;
+color: #1D2226;
+text-transform: capitalize;
+opacity: 1;
+}
+.MarryDoe {
+  /* Layout Properties */
+  position: absolute;
+top: 98px;
+left: 116px;
+width: 73px;
+height: 18px;
+/* UI Properties */
+text-align: left;
+font: normal normal medium 15px/19px Rubik;
+letter-spacing: 0px;
+color: #1D2226;
+text-transform: capitalize;
+opacity: 1;
+}
+.MarryDoeMarry {
+  /* Layout Properties */
+  position: absolute;
+top: 122px;
+left: 116px;
+width: 118px;
+height: 17px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 14px/19px Rubik;
+letter-spacing: 0px;
+color: #1D2226;
+text-transform: capitalize;
+opacity: 1;
 }
